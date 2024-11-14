@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10</title>
+    <style>
+        .main {
+            display: flex;
+        }
+        .man{
+            margin: 10% auto;
+            min-width: 420px;
+            max-width: 510px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+
+        label{
+            font-style: italic;
+        }
+
+        .rig{
+            width: 150px;
+        }
+        .rig label{
+            margin-left: 9px;
+        }
+        .lef{
+            width: 360px;
+            height: 30px;
+        }
+        .lef input{
+            margin-left: 15px;
+        }
+        .gra input{
+            width: 246px;
+        }
+        .lef label{
+            margin-left: 6px;
+        }
+        .lef button{
+            margin-left: 15px;
+            color: blueviolet;
+        }
+        .lef button:hover{
+            color: rgb(141, 28, 28);
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="man">
+            <center>
+                <h1>Mark-Sheet Calculator</h1>
+                <div>
+                    <table border="1">
+                        <tbody>
+                            <tr>
+                                <td class="rig"><label for="physic">Physic</label></td>
+                                <td class="lef"><input type="number" name="physic" id="physic" required> <label>(Max : 100)</label></td>
+                            </tr>
+                            <tr>
+                                <td class="rig"><label for="chemistry">Chemistry</label></td>
+                                <td class="lef"><input type="number" name="chemistry" id="chemistry" required> <label>(Max : 100)</label></td>
+                            </tr>
+                            <tr>
+                                <td class="rig"><label for="maths">Maths</label></td>
+                                <td class="lef"><input type="number" name="maths" id="maths" required> <label>(Max : 100)</label></td>
+                            </tr>
+                            <tr>
+                                <td class="rig"><label for="english">English</label></td>
+                                <td class="lef"><input type="number" name="english" id="english" required> <label>(Max : 100)</label></td>
+                            </tr>
+                            <tr>
+                                <td class="rig"><label for="computer">Computer</label></td>
+                                <td class="lef"><input type="number" name="computer" id="computer" required> <label>(Max : 100)</label></td>
+                            </tr>
+                            <tr>
+                                <td class="rig"><label for="physical_edu">Physical Edu</label></td>
+                                <td class="lef"><input type="number" name="physical_edu" id="physical_edu" required> <label>(Max : 100)</label></td>
+                            </tr>
+                            <tr>
+                                <td class="rig"><label for="total">Total</label></td>
+                                <td class="lef"><input type="number" name="total" id="total"></td>
+                            </tr>
+                            <tr>
+                                <td class="rig"><label for="percentage">Percentage</label></td>
+                                <td class="lef"><input type="number" name="percentage" id="percentage"></td>
+                            </tr>
+                            <tr>
+                                <td class="rig"><label for="grade">Grade</label></td>
+                                <td class="lef , gra"><input type="text" name="grade" id="grade"></td>
+                            </tr>
+                            <tr>
+                                <td class="rig"></td>
+                                <td class="lef"><button onclick="marks()">Calculate</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </center>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
